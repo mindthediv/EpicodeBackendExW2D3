@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Ex3 {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) throws IOException, InterruptedException {
 		HashMap<String, Integer> elenco = new HashMap<String,Integer>();
 		elenco.put("Mario Rossi", 7);
 		elenco.put("Micheal Jackson", 2);
@@ -15,7 +15,5 @@ public class Ex3 {
 		RegistroPresenze registro = new RegistroPresenze(elenco);
 		registro.salvaRegistro();
 		registro.caricaRegistro();		
-		
-		
 	}
 }
